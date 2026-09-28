@@ -1,5 +1,144 @@
 @use "setting" as *;
 
+// ----------------------------------------
+// front-page.php 共通（画像を中央寄せ）
+// ----------------------------------------
+.pc,
+.sp {
+  width: 100%;
+  margin: 0 auto;
+
+  picture {
+    display: block;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+
 /* ----------------------------------------
-message mv
+front-page.php PC
 ---------------------------------------- */
+.pc {
+  display: block;
+}
+
+.pc-btn {
+  position: relative;
+
+  &__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 80%;
+    max-width: 1000px;
+
+    .btn-link {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+  }
+}
+
+.pc-footer {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &__btn {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 28%;
+    max-width: 400px;
+  }
+}
+
+.sp{
+    display: none;
+}
+
+/* ----------------------------------------
+front-page.php SP
+---------------------------------------- */
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .sp-btn {
+    position: relative;
+
+    &__inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      width: 84%;
+
+      .btn-link {
+        width: 100%;
+      }
+    }
+  }
+
+  .sp-footer {
+    position: relative;
+
+    &__btn {
+      position: absolute;
+      top: 27%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 65%;
+    }
+  }
+}
+
+
+// ----------------------------------------
+// 共通：ボタンリンク
+// ----------------------------------------
+.btn-link {
+  display: block;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+}
