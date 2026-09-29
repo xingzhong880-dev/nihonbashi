@@ -12,9 +12,14 @@
                                 <img src="<?php echo esc_url(get_template_directory_uri() . '/img/Frame.webp'); ?>" alt="" width="1400" height="287" />
                         </picture>
                         <div class="pc-btn__inner">
+                                <picture class="btn-link-provisional">
+                                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/btn01.webp'); ?>" alt="WEB予約はこちら" />
+                                </picture>
+                                <!--
                                 <a href="" class="btn-link">
                                         <img src="<?php echo esc_url(get_template_directory_uri() . '/img/btn01.webp'); ?>" alt="WEB予約はこちら" />
                                 </a>
+                                -->
                                 <a href="" class="btn-link">
                                         <img src="<?php echo esc_url(get_template_directory_uri() . '/img/btn02.webp'); ?>" alt="LINEで開院のお知らせを受け取る" />
                                 </a>
@@ -36,9 +41,14 @@
                         <picture class="pc-footer__bg">
                                 <img src="<?php echo esc_url(get_template_directory_uri() . '/img/フッター.webp'); ?>" alt="" width="1400" height="818" />
                         </picture>
+                        <picture class="pc-footer__btn btn-link-provisional">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/img/btn03.webp'); ?>" alt="10/19よりWEB予約受付開始予定" />
+                        </picture>
+                        <!--
                         <a href="" class="pc-footer__btn btn-link">
                                 <img src="<?php echo esc_url(get_template_directory_uri() . '/img/btn03.webp'); ?>" alt="10/19よりWEB予約受付開始予定" />
                         </a>
+                        -->
                 </div>
         </div>
 
@@ -51,9 +61,14 @@
                                 <img src="<?php echo esc_url(get_template_directory_uri() . '/img/Frame-sp.webp'); ?>" alt="" width="375" height="245" />
                         </picture>
                         <div class="sp-btn__inner">
+                                <picture class="btn-link-provisional">
+                                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/btn01.webp'); ?>" alt="WEB予約はこちら" />
+                                </picture>
+                                <!--
                                 <a href="" class="btn-link">
                                         <img src="<?php echo esc_url(get_template_directory_uri() . '/img/btn01.webp'); ?>" alt="WEB予約はこちら" />
                                 </a>
+                                -->
                                 <a href="" class="btn-link">
                                         <img src="<?php echo esc_url(get_template_directory_uri() . '/img/btn02.webp'); ?>" alt="LINEで開院のお知らせを受け取る" />
                                 </a>
@@ -75,9 +90,14 @@
                         <picture class="sp-footer__bg">
                                 <img src="<?php echo esc_url(get_template_directory_uri() . '/img/フッターsp.webp'); ?>" alt="" width="375" height="771" />
                         </picture>
+                        <picture class="sp-footer__btn btn-link-provisional">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/img/btn04.webp'); ?>" alt="WEB予約はこちら" />
+                        </picture>
+                        <!--
                         <a href="" class="sp-footer__btn btn-link">
                                 <img src="<?php echo esc_url(get_template_directory_uri() . '/img/btn04.webp'); ?>" alt="WEB予約はこちら" />
                         </a>
+                        -->
                 </div>
         </div>
 

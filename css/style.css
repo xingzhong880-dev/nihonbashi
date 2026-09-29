@@ -308,6 +308,7 @@ front-page.php PC
 ---------------------------------------- */
 .pc {
   display: block;
+  padding: 10px;
 }
 
 .pc-btn {
@@ -335,8 +336,12 @@ front-page.php PC
   gap: 24px;
   width: 80%;
   max-width: 1000px;
+  /* 
+  ↓リンク確定後　.btn-link-provisional消す
+  */
 }
-.pc-btn__inner .btn-link {
+.pc-btn__inner .btn-link,
+.pc-btn__inner .btn-link-provisional {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
@@ -397,37 +402,75 @@ front-page.php SP
             align-items: center;
     gap: 12px;
     width: 84%;
+    /* 
+    ↓リンク確定後　.btn-link-provisional消す
+    */
   }
-  .sp-btn__inner .btn-link {
+  .sp-btn__inner .btn-link,
+  .sp-btn__inner .btn-link-provisional {
     width: 100%;
   }
   .sp-footer {
     position: relative;
   }
+  .sp-footer__bg {
+    overflow: hidden;
+    aspect-ratio: 375/590;
+  }
+  .sp-footer__bg img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
   .sp-footer__btn {
     position: absolute;
-    top: 27%;
+    top: 34%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 65%;
   }
 }
-.btn-link {
+.btn-link,
+.btn-link-provisional {
   display: block;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
 }
-.btn-link:hover {
-  opacity: 0.8;
-}
-.btn-link img {
+.btn-link img,
+.btn-link-provisional img {
   display: block;
   width: 100%;
   height: auto;
   max-width: none;
 }
 
+.btn-link {
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.btn-link:hover {
+  opacity: 0.8;
+}
+
+/* 
+↓リンク確定後　こちらに変更
+
+.btn-link {
+  display: block;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+}
+
+*/
 /* ----------------------------------------
 last
 ---------------------------------------- */
