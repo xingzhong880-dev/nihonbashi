@@ -310,6 +310,29 @@ front-page.php PC
   display: block;
   padding: 10px;
 }
+.pc .pc-access-container {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.pc .pc-access-container .pc-access {
+  display: block;
+}
+.pc .pc-access-container .pc-access img {
+  width: 100%;
+  max-width: 100%;
+}
+.pc .pc-access-container .pc-map {
+  position: absolute;
+  top: 33.1%;
+  left: 55.7%;
+  width: 33.8%;
+}
+.pc .pc-access-container .pc-map img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
 
 .pc-btn {
   position: relative;

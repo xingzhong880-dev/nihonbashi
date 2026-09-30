@@ -28,9 +28,14 @@
                 <picture class="pc-explanation">
 		        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/LIVAについて.webp'); ?>" alt="" width="1400" height="722" />
 		</picture>
-                <picture class="pc-access">
-		        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/診療時間・アクセス.webp'); ?>" alt="" width="1400" height="807" />
-		</picture>
+                <div class="pc-access-container">
+                        <picture class="pc-access">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/img/診療時間・アクセス.webp'); ?>" alt="" width="1400" height="807" />
+                        </picture>
+                        <picture class="pc-map">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/img/map.webp'); ?>" alt="" width="474" height="372" />
+                        </picture>
+                </div>
                 <picture class="pc-content">
 		        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/診療内容.webp'); ?>" alt="" width="1400" height="1202" />
 		</picture>
@@ -78,7 +83,10 @@
 		        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/LIVAについてsp.webp'); ?>" alt="" width="375" height="1086" />
 		</picture>
                 <picture class="sp-access">
-		        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/診療時間・アクセスsp.webp'); ?>" alt="" width="375" height="767" />
+		        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/診療時間・アクセスsp.webp'); ?>" alt="" width="375" height="448" />
+		</picture>
+                <picture class="sp-map">
+		        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/map-sp.webp'); ?>" alt="" width="375" height="319" />
 		</picture>
                 <picture class="sp-content">
 		        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/診療内容sp.webp'); ?>" alt="" width="375" height="1579" />

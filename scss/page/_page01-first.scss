@@ -29,6 +29,34 @@ front-page.php PC
 .pc {
   display: block;
   padding: 10px;
+
+  .pc-access-container {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .pc-access {
+      display: block;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .pc-map {
+      position: absolute;
+      top: 33.1%;
+      left: 55.7%;
+      width: 33.8%;
+
+      img {
+        width: 100%;
+        max-width: none;
+        height: auto;
+      }
+    }
+  }
 }
 
 .pc-btn {
