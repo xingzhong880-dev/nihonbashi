@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
     <!-- favicon OGP-->
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" type="image/x-icon">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/OGP.jpg">
